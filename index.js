@@ -2,6 +2,6 @@ const express = require('express')
 const app = express()
 app.all('/', (req, res) => {
     console.log("Just got a request!")
-    res.send('Yo! Create second commit on main')
+    res.send('Yo! After deleting enviroment')
 })
 app.listen(process.env.PORT || 3000)
